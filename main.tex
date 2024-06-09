@@ -1,0 +1,100 @@
+\documentclass[10pt,letterpaper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\setlength{\columnsep}{2cm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{geometry} % Add the geometry package
+\geometry{a4paper, margin=2cm}
+\pagestyle{fancy}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage{svg}
+\usepackage{ragged2e} % For text alignment
+% Define the header and footer
+\fancyhead{} % Clear header
+\fancyfoot{} % Clear footer
+
+
+% Add borders
+\renewcommand{\headrulewidth}{1pt} % Header border thickness
+\renewcommand{\footrulewidth}{1pt} % Footer border thickness
+
+% Hyperlink settings
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\begin{document}
+%\onehalfspacing%for spacing between line
+\setstretch{1.5}
+\renewcommand{\contentsname}{Table of Contents}
+\cfoot{\thepage} % Set page number at the bottom-right
+\pagenumbering{roman} % Start Roman numerals 
+\include{certification}
+\include{introduction}
+\include{dedications}
+\include{acknowledgement}
+\include{abstract}
+
+\tableofcontents
+% \addcontentsline{toc}{chapter}{Index} % Add entry for List of Figures in the table of contents
+\listoffigures
+\listoftables
+\cfoot{\thepage} % Set page number at the bottom-right 
+\pagenumbering{arabic}
+\include{chapters/introduction}
+
+\include{Literature Review/introduction}
+
+
+\include{methodology/methodology}
+
+
+\include{SystemAnalysis/requirements}
+\include{SystemAnalysis/usecasediagramforoursystem}
+% \include{SystemAnalysis/use_caes_diagram_delivery_process}
+% \include{SystemAnalysis/use_case_diagram_for_office_management}
+\include{SystemAnalysis/component_of_ERD}
+% \include{SystemAnalysis/ER Diagram of our system(Customer order process)}
+\include{SystemAnalysis/ER diagram of office management system}
+\include{SystemAnalysis/sequence_diagram_of_order_processing}
+
+
+\include{Design Specifications/fron-end-design(homepage)}
+
+% \include{Design Specifications/panel design}
+% \include{Design Specifications/ProductDetailsSections}
+% \include{Design Specifications/productbuyform}
+% \include{Design Specifications/create_cart_order}
+% \include{Design Specifications/getcartinvoice}
+% \include{Design Specifications/filter-option}
+% \include{Design Specifications/staffsregistration}
+% \include{Design Specifications/staffdashboard}
+% \include{Design Specifications/visual and manual implimentation of revenue}
+% \include{Design Specifications/staffscheckorders}
+% \include{Design Specifications/hire delivery man and select service}
+% \include{Design Specifications/costs specification}
+% \include{Design Specifications/product crud operations}
+
+
+
+
+\include{Implementation and Testing/implementation of database}
+\include{Implementation and Testing/Implementation and front end design}
+% Interaction table duibar lekha hyse
+% \include{Implementation and Testing/implementation of interaction}
+% \include{Implementation and Testing/interaction table}
+\include{Implementation and Testing/test_result_and_report}
+
+
+\include{limitation/limitation}
+\end{document}

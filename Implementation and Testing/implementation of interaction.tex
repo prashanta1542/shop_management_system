@@ -1,0 +1,32 @@
+\section{Implementation of Interaction}
+In order to achieve the desired functionality and user experience, the project implements various interactions through the following API endpoints:
+
+\subsection*{Product Management}
+\begin{itemize}
+\item \textbf{Delete Product by ID}: GET request to \texttt{/productdeletebyid/:id} allows the deletion of a product from the database.
+\item \textbf{Update Product}: POST request to \texttt{/productupdate} enables the modification of product information.
+\item \textbf{Get Products by Category}: GET request to \texttt{/getproductbycatagory/:id} retrieves products belonging to a specific category.
+\item \textbf{Select Category}: GET request to \texttt{/selectcatagory} fetches all available product categories.
+\item \textbf{Insert Category}: POST request to \texttt{/catagoryinsert} adds a new category to the system.
+\item \textbf{Insert Product}: POST request to \texttt{/productinsert} allows the insertion of a new product into the database.
+\item \textbf{Get All Products}: GET request to \texttt{/getproduct} retrieves all products from the database.
+\item \textbf{Get Product by ID}: GET request to \texttt{/product/:id} fetches a specific product by its ID.
+\item \textbf{Product Migration}: GET request to \texttt{/productmigrate} synchronizes the product model with the database.
+\end{itemize}
+
+\subsection*{Staff Management}
+\begin{itemize}
+\item \textbf{Find Total Costs}: GET request to \texttt{/findtotalcost} retrieves the total costs from the database.
+\item \textbf{Find Costs}: GET request to \texttt{/findcost} fetches the costs from the database.
+\item \textbf{Enter Cost}: POST request to \texttt{/costenter} allows the insertion of a new cost into the system.
+\item \textbf{Add New Cost Type}: POST request to \texttt{/addnewcosttype} adds a new cost type to the database.
+\item \textbf{Fetch All Cost Types}: GET request to \texttt{/fetchallcosttype} retrieves all available cost types.
+\item \textbf{Find All Delivery Men}: GET request to \texttt{/finddeliveryman} fetches all delivery men from the database.
+\item \textbf{Hire Delivery Man}: POST request to \texttt{/hiredeliveryman} creates a new job for a delivery man.
+\item \textbf{Change Cart Payment Status}: GET request to \texttt{/changecartpaymentstatus/:id} updates the payment status of a cart order.
+\item \textbf{Find Cart Payment Info}: GET request to \texttt{/cartpaymentinfo} fetches the payment information for cart orders.
+\item \textbf{Change Payment Status}: GET request to \texttt{/changestatus/:id} updates the payment status of an order.
+\item \textbf{Find Orders}: GET request to \texttt{/findorder} retrieves the payment information for orders.
+\item \textbf{Insert New Delivery Man}: POST request to \texttt{/insertnewdeliveryman} adds a new delivery man to the system.
+\item \textbf{Find Staff by ID}: GET request to \texttt{/findstaffbyid/:id} fetches staff information by their ID.
+\end{itemize}

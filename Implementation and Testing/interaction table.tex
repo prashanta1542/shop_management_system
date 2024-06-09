@@ -1,0 +1,101 @@
+\section{Implementation of Interaction}
+In order to achieve the desired functionality and user experience, the project implements various interactions through the following API endpoints:
+
+\subsection*{Express Configuration}    
+\begin{tabular}{|l|l|p{8cm}|}
+\hline
+\textbf{Dependency} & \textbf{Package} & \textbf{Description} \\ \hline
+\texttt{express} & Express & Fast, unopinionated, and minimalist web framework for Node.js \\ \hline
+\texttt{productmodel} & ./models/product & Model for managing product data \\ \hline
+\texttt{staffmodel} & ./models/staffs & Model for managing staff data \\ \hline
+\texttt{customermodel} & ./models/customers & Model for managing customer data \\ \hline
+\texttt{deliverymodel} & ./models/deliverymans & Model for managing delivery man data \\ \hline
+\texttt{productmigrate} & ./migrations/productinsert & Migration for product insertion \\ \hline
+\texttt{staffmigrate} & ./migrations/staffsmigrate & Migration for staff synchronization \\ \hline
+\texttt{customermigrate} & ./migrations/customermigrate & Migration for customer synchronization \\ \hline
+\texttt{deliverymigrate} & ./migrations/deliverymigrate & Migration for delivery man synchronization \\ \hline
+\texttt{app} & Express app & The Express application \\ \hline
+\texttt{cors} & cors & Middleware for enabling Cross-Origin Resource Sharing \\ \hline
+\texttt{bodyParser} & body-parser & Middleware for parsing HTTP request bodies \\ \hline
+\texttt{port} & 3001 & Port number for the server to listen on \\ \hline
+\end{tabular}
+
+\subsection*{Product Management}
+    \begin{tabular}{|l|l|p{8cm}|}
+        \hline
+        \textbf{Endpoint} & \textbf{HTTP Method} & \textbf{Description} \\ \hline
+        \texttt{/productdeletebyid/:id} & GET & Delete a product by ID \\ \hline
+        \texttt{/productupdate} & POST & Update product information \\ \hline
+        \texttt{/getproductbycatagory/:id} & GET & Get products by category \\ \hline
+        \texttt{/selectcatagory} & GET & Select product category \\ \hline
+        \texttt{/catagoryinsert} & POST & Insert a new category \\ \hline
+        \texttt{/productinsert} & POST & Insert a new product \\ \hline
+        \texttt{/getproduct} & GET & Get all products \\ \hline
+        \texttt{/product/:id} & GET & Get product by ID \\ \hline
+        \texttt{/productmigrate} & GET & Synchronize product model \\ \hline
+    \end{tabular}
+
+
+\subsection*{Staff Management}
+\begin{tabular}{|l|l|p{8cm}|}
+\hline
+\textbf{Endpoint} & \textbf{HTTP Method} & \textbf{Description} \\ \hline
+\texttt{/findtotalcost} & GET & Find total costs \\ \hline
+\texttt{/findcost} & GET & Find costs \\ \hline
+\texttt{/costenter} & POST & Enter a new cost \\ \hline
+\texttt{/addnewcosttype} & POST & Add a new cost type \\ \hline
+\texttt{/fetchallcosttype} & GET & Fetch all cost types \\ \hline
+\texttt{/finddeliveryman} & GET & Find all delivery men \\ \hline
+\texttt{/hiredeliveryman} & POST & Hire a delivery man \\ \hline
+\texttt{/changecartpaymentstatus/:id} & GET & Change cart payment status \\ \hline
+\texttt{/cartpaymentinfo} & GET & Find cart payment info \\ \hline
+\texttt{/changestatus/:id} & GET & Change payment status \\ \hline
+\texttt{/findorder} & GET & Find orders \\ \hline
+\texttt{/insertnewdeliveryman} & POST & Insert a new delivery man \\ \hline
+\texttt{/findstaffbyid/:id} & GET & Find staff by ID \\ \hline
+\end{tabular}
+
+\subsection*{Customer Management}
+\begin{tabular}{|l|l|p{8cm}|}
+\hline
+\textbf{Endpoint} & \textbf{HTTP Method} & \textbf{Description} \\ \hline
+\texttt{/totalearnfrommultiproduct} & GET & Get total earnings from multiple products \\ \hline
+\texttt{/totalearnfromsingleproduct} & GET & Get total earnings from a single product \\ \hline
+\texttt{/orderplace} & POST & Place an order \\ \hline
+\texttt{/orderfindbyid/:id} & GET & Find an order by ID \\ \hline
+\texttt{/findorderedProductbyId/:id} & GET & Find ordered products by ID \\ \hline
+\texttt{/findorderid/:id} & GET & Find payment information by order ID \\ \hline
+\texttt{/requestinvoice} & POST & Request an invoice \\ \hline
+\texttt{/customerfindbyid/:id} & GET & Find customer by ID \\ \hline
+\texttt{/cartinsert} & POST & Insert a product into the cart \\ \hline
+\texttt{/cartpaymentInfo} & POST & Provide cart payment information \\ \hline
+\texttt{/cartorderfindinvoicebyid/:id} & GET & Find invoice by cart order ID \\ \hline
+\texttt{/cartproductfindinvoicebyid/:id} & GET & Find product by cart order ID \\ \hline
+\texttt{/customermigrate} & GET & Synchronize customer model \\ \hline
+\texttt{/findcartpaymentinfobyid/:id} & GET & Find cart payment information by ID \\ \hline
+\end{tabular}
+\vspace{4cm}
+\subsection*{Deliveryman Management}
+\begin{table}[ht]
+    \centering
+\begin{tabular}{|l|l|p{8cm}|}
+\hline
+\textbf{Endpoint} & \textbf{HTTP Method} & \textbf{Description} \\ \hline
+\texttt{/finddeliverymanbyid/:id} & GET & Find delivery man by ID \\ \hline
+\texttt{/deliverymanlogin} & POST & Delivery man login \\ \hline
+\texttt{/findjobs} & GET & Find jobs \\ \hline
+\texttt{/findjobbyid/:id} & GET & Find job by ID \\ \hline
+\texttt{/findreports} & GET & Find reports \\ \hline
+\texttt{/findschedulebyid/:id} & GET & Find schedule by user ID \\ \hline
+\texttt{/findondelivery} & GET & Find all on delivery \\ \hline
+\texttt{/findondeliverybyid/:id} & GET & Find all on delivery by ID \\ \hline
+\texttt{/deliverymigrate} & GET & Synchronize delivery model \\ \hline
+\texttt{/orderconfirmation/:id} & GET & Get order confirmation \\ \hline
+\texttt{/reportinsert} & POST & Insert a report \\ \hline
+\end{tabular}
+    
+    \caption{List of Context API build for Interaction Implementation}
+    \label{tab:6.1}
+\end{table}
+
+\input{Implementation and Testing/test_result_and_report}

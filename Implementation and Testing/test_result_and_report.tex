@@ -1,0 +1,60 @@
+\section{Test result and Report}
+\begin{table}[H]
+    \centering
+    \caption{Test cases for User Interface}
+    \label{tab:test-cases-ui}
+    \begin{tabular}{|c|p{3cm}|p{3cm}|p{3cm}|c|c|}
+        \hline
+        \textbf{SI No} & \textbf{Test Case} & \textbf{Input} & \textbf{Expected Outcome} & \textbf{Actual Output} & \textbf{Result} \\ \hline
+        1 & Display web page & Tested On Browser & Display Successful & Web page displayed & Passed \\ \hline
+        2 & Check navigation link & Clicking On nav Button & Linked Successful & Navigate on expected page & Passed \\ \hline
+        3 & Cart Product & Clicking On Cart Button & Product listing on Cart & Product set in cart & Passed \\ \hline
+        4 & Filter product by Color & Clicking on different color filter option & Showed product with existing color & Product filter with color & Passed \\ \hline
+        5 & Filter product by Price & Change the slider of Price filter option & Showed product with existing Price & Product filter with price & Passed \\ \hline
+        6 & Filter product with different categories & Clicking on different categories option & Showed product with existing category & Product filter with category & Passed \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Test cases for Product Buying Process}
+    \label{tab:test-cases-buying-process}
+    \begin{tabular}{|c|p{3cm}|p{3cm}|p{3cm}|c|c|}
+        \hline
+        \textbf{SI No} & \textbf{Test Case} & \textbf{Input} & \textbf{Expected Outcome} & \textbf{Actual Output} & \textbf{Result} \\ \hline
+        1 & Input field required & Blank Input & Failed Submission & submission failed with warning & Failed \\ \hline
+        2 & Valid E-mail Format & Invalid e-mail format & Failed Submission & submission failed with warning & Failed \\ \hline
+        3 & Generate invoice form & Submit Customer details & Generate Invoice ID on Invoice page & Shows generated invoice & Passed \\ \hline
+        4 & Order Confirmation Mail & Check mail & Getting Order id and OTP & Gets confirmation mail & Passed \\ \hline
+        5 & Check Order detail & Order ID & Getting Billing Invoice & Shows generated invoice & Passed \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Test cases for Staff Management Process}
+    \label{tab:test-cases-staff-management}
+    \begin{tabular}{|c|p{3cm}|p{3cm}|p{3cm}|c|c|}
+        \hline
+        \textbf{SI No} & \textbf{Test Case} & \textbf{Input} & \textbf{Expected Outcome} & \textbf{Actual Output} & \textbf{Result} \\ \hline
+        1 & Get registration mail & Check mail & Get password & Password get in mail & Passed \\ \hline
+        2 & Blank or incorrect Password & Blank Password & Login failed & Login failed & Failed \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Test cases for Delivery Management Process}
+    \label{tab:test-cases-delivery-management}
+    \begin{tabular}{|c|p{3cm}|p{3cm}|p{3cm}|c|c|}
+        \hline
+        \textbf{SI No} & \textbf{Test Case} & \textbf{Input} & \textbf{Expected Outcome} & \textbf{Actual Output} & \textbf{Result} \\ \hline
+        1 & Login credential & Invalid password & Failed Login & Failed Login & Failed \\ \hline
+        2 & Check Order detail & Clicking on details button & Show invoice form & Open Invoice form & Passed \\ \hline
+        3 & Order Confirmation & Submit Order Id & Match OTP with customer & open delivery form & Passed \\ \hline
+    \end{tabular}
+\end{table}
+\vspace{4cm}
+\section{Summary}
+
+The "Implementation and Testing" section of the project report for the "Shop Management Software System" focused on key aspects of system development. It involved the implementation of the database, including the design, creation, and population of relevant tables. Furthermore, the front-end design was developed to create an aesthetically pleasing and user-friendly interface. The interaction components, such as API endpoints and functionality, were also implemented. Thorough testing was conducted, and the results were documented in the test report. This section emphasizes the successful implementation of the system's core components and the rigorous testing process.

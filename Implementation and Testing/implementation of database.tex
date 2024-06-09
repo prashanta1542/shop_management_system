@@ -1,0 +1,278 @@
+\chapter{Implementation \& Testing}
+\section{Implementation of database}
+\vspace{0.2cm}
+
+
+The database implementation for the Shop Management System project involves defining and creating several database tables using Sequelize, a popular Object-Relational Mapping (ORM) library for Node.js.
+
+\subsection{Customer Registration}
+
+The \texttt{customerdetail} table is used to store customer registration details. It has the following columns:
+
+\begin{itemize}
+    \item \texttt{id} (Primary Key): String type, uniquely identifies each customer.
+    \item \texttt{name}: String type, stores the customer's name.
+    \item \texttt{email}: String type, stores the customer's email.
+    \item \texttt{mobile}: String type, stores the customer's mobile number.
+    \item \texttt{alternative\_mobile}: String type, stores an alternative contact number for the customer.
+    \item \texttt{street}: String type, stores the customer's street address.
+    \item \texttt{city}: String type, stores the customer's city.
+\end{itemize}
+
+\subsection{Customer Orders}
+
+The \texttt{customerorders} table is used to store customer order details. It has the following columns:
+
+\begin{itemize}
+    \item \texttt{id} (Primary Key): String type, uniquely identifies each order.
+    \item \texttt{productid}: String type, stores the ID of the product ordered.
+    \item \texttt{productname}: String type, stores the name of the product ordered.
+    \item \texttt{price}: String type, stores the price of the product.
+    \item \texttt{quantity}: String type, stores the quantity of the product ordered.
+    \item \texttt{totalprice}: String type, stores the total price of the order.
+\end{itemize}
+
+\subsection{Customer Payments}
+
+The \texttt{totalbill} table is used to store the total bill amount for each customer. It has the following columns:
+
+\begin{itemize}
+    \item \texttt{id} (Primary Key): String type, uniquely identifies each bill.
+    \item \texttt{customerid}: String type, stores the ID of the customer.
+    \item \texttt{netpay}: String type, stores the net payment amount.
+\end{itemize}
+
+The \texttt{paymentinfo} table is used to store payment information for customer orders. It has the following columns:
+
+\begin{itemize}
+    \item \texttt{id} (Primary Key): String type, uniquely identifies each payment.
+    \item \texttt{customerid}: String type, stores the ID of the customer.
+    \item \texttt{netpay}: String type, stores the net payment amount.
+    \item \texttt{paymeenttype}: String type, stores the type of payment (e.g., cash, credit card).
+    \item \texttt{bakshnumber}: String type, stores the Baksh number for the payment.
+    \item \texttt{trxid}: String type, stores the transaction ID for the payment.
+    \item \texttt{status}: String type, stores the status of the payment.
+\end{itemize}
+
+\subsection{Order State}
+
+The \texttt{orderstate} table is used to store the order state (status) for each customer order. It has the following columns:
+
+\begin{itemize}
+    \item \texttt{id} (Primary Key): String type, uniquely identifies each order state.
+    \item \texttt{customerid}: String type, stores the ID of the customer.
+    \item \texttt{status}: String type, stores the status of the order.
+\end{itemize}
+
+\subsection{Cart Product}
+
+The \texttt{cartproduct} table is used to store products added to the cart by customers. It has the following columns:
+
+\begin{itemize}
+    \item \texttt{bill\_id} (Primary Key): String type, uniquely identifies each cart product.
+    \item \texttt{customerid}: String type, stores the ID of the customer.
+    \item \texttt{productid}: String type, stores the ID of the product.
+    \item \texttt{productname}: String type, stores the name of the product.
+    \item \texttt{price}: String type, stores the price of the product.
+    \item \texttt{quantity}: String type, stores the quantity of the product.
+    \item \texttt{totalprice}: String type, stores the total price of the product in the cart.
+    \item \texttt{invoice\_id}: String type, stores the ID of the invoice associated with the cart product.
+\end{itemize}
+
+\subsection{Cart Payment Info}
+
+The \texttt{cart\_payment} table is used to store payment information for cart products. It has the following columns:
+
+\begin{itemize}
+    \item \texttt{invoice\_id} (Primary Key): String type, uniquely identifies each cart payment.
+    \item \texttt{bill\_id}: String type, uniquely identifies the associated cart product.
+    \item \texttt{customerid}: String type, stores the ID of the customer.
+    \item \texttt{netpay}: String type, stores the net payment amount.
+    \item \texttt{paymeenttype}: String type, stores the type of payment (e.g., cash, credit card).
+    \item \texttt{bakshnumber}: String type, stores the Baksh number for the payment.
+    \item \texttt{trxid}: String type, stores the transaction ID for the payment.
+    \item \texttt{status}: String type, stores the status of the payment.
+\end{itemize}
+
+\subsection{Cart Invoice}
+
+The \texttt{cartinvoice} table is used to store invoices for cart products. It has the following columns:
+
+\begin{itemize}
+    \item \texttt{bill\_id} (Primary Key): String type, uniquely identifies each cart invoice.
+    \item \texttt{invoice\_id}: String type, stores the ID of the invoice.
+    \item \texttt{customerid}: String type, stores the ID of the customer.
+    \item \texttt{status}: String type, stores the status of the invoice.
+\end{itemize}
+
+\subsection{Order Confirmation}
+
+The \texttt{orderconfirmation} table is used to store order confirmations with OTP (One-Time Password). It has the following columns:
+
+\begin{itemize}
+    \item \texttt{orderid} (Primary Key): String type, uniquely identifies each order confirmation.
+    \item \texttt{otp}: String type, stores the One-Time Password for the order confirmation.
+\end{itemize}
+
+To create the above-mentioned tables, the \texttt{sequelize.sync()} function is called with the \texttt{alter:true} option, which ensures that the tables are synchronized with the database and any necessary changes are applied
+
+\subsection{Implementation of deliveryman database}
+\begin{itemize}
+    % \item \texttt{DeliveryManDetail} (\textbf{deliverymandetail}):
+    % \begin{itemize}
+    %     \item \texttt{id} (Primary Key): String type, uniquely identifies the deliveryman detail.
+    %     \item \texttt{position}: String type, stores the position of the deliveryman.
+    %     \item \texttt{employeename}: String type, stores the name of the employee.
+    %     \item \texttt{fname}: String type, stores the first name of the deliveryman.
+    %     \item \texttt{mname}: String type, stores the middle name of the deliveryman.
+    %     \item \texttt{nationality}: String type, stores the nationality of the deliveryman.
+    %     \item \texttt{dob}: Date type, stores the date of birth of the deliveryman.
+    %     \item \texttt{photo}: String type, stores the path to the photo of the deliveryman (nullable).
+    %     \item \texttt{pstree}: String type, stores the street of the present address.
+    %     \item \texttt{phouse}: String type, stores the house number of the present address.
+    %     \item \texttt{pCity}: String type, stores the city of the present address.
+    %     \item \texttt{ppostoffice}: String type, stores the post office of the present address.
+    %     \item \texttt{ppostcode}: String type, stores the postcode of the present address.
+    %     \item \texttt{parstree}: String type, stores the street of the permanent address.
+    %     \item \texttt{parhouse}: String type, stores the house number of the permanent address.
+    %     \item \texttt{parCity}: String type, stores the city of the permanent address.
+    %     \item \texttt{parpostoffice}: String type, stores the post office of the permanent address.
+    %     \item \texttt{parpostcode}: String type, stores the postcode of the permanent address.
+    %     \item \texttt{mobilenumber}: String type, stores the mobile number of the deliveryman.
+    %     \item \texttt{alternatenumber}: String type, stores the alternate mobile number of the deliveryman.
+    %     \item \texttt{officenumber}: String type, stores the office number of the deliveryman.
+    %     \item \texttt{customerEmail}: String type, stores the email of the customer.
+    %     \item \texttt{joiningdate}: Date type, stores the joining date of the deliveryman.
+    %     \item \texttt{salary}: Integer type, stores the salary of the deliveryman.
+    % \end{itemize}
+    \item \texttt{Deliverystafflogin} (\textbf{deliverystafflogin}):
+    \begin{itemize}
+        \item \texttt{id} (Primary Key): String type, uniquely identifies the delivery staff login.
+        \item \texttt{email}: String type, stores the email of the delivery staff.
+        \item \texttt{password}: String type, stores the password of the delivery staff.
+    \end{itemize}
+    \item \texttt{Schedule} (\textbf{schedule}):
+    \begin{itemize}
+        \item \texttt{staffId} (Primary Key): String type, uniquely identifies the schedule.
+        \item \texttt{startsTime}: Date type, stores the start time of the schedule.
+        \item \texttt{endsTime}: Date type, stores the end time of the schedule.
+    \end{itemize}
+    \item \texttt{Weekday} (\textbf{weekday}):
+    \begin{itemize}
+        \item \texttt{staffid} (Primary Key): String type, uniquely identifies the weekday.
+        \item \texttt{day1}: String type, stores the name of the first day of the week.
+        \item \texttt{day2}: String type, stores the name of the second day of the week.
+        \item \texttt{day3}: String type, stores the name of the third day of the week.
+    \end{itemize}
+    \item \texttt{LoginState} (\textbf{loginState}):
+    \begin{itemize}
+        \item \texttt{id} (Primary Key): String type, uniquely identifies the login state.
+        \item \texttt{state}: Enum type (active, scheduled), stores the state of the login (default value: scheduled).
+    \end{itemize}
+    \item \texttt{DeliverymanPaymentInfo} (\textbf{deliverymanpaymentinfo}):
+    \begin{itemize}
+        \item \texttt{id} (Primary Key): String type, uniquely identifies the payment info.
+        \item \texttt{paymeenttype}: String type, stores the type of payment.
+        \item \texttt{bakshnumber}: String type, stores the Baksh number for the payment.
+        \item \texttt{netpay}: String type, stores the net payment amount.
+        \item \texttt{status}: String type, stores the status of the payment.
+    \end{itemize}
+    \item \texttt{DeliveryReport} (\textbf{deliveryreport}):
+    \begin{itemize}
+        \item \texttt{id} (Primary Key): String type, uniquely identifies the delivery report.
+        \item \texttt{otp}: String type, stores the OTP (One-Time Password) for the report.
+        \item \texttt{reporttype}: String type, stores the type of the report.
+        \item \texttt{description}: String type, stores the description of the report.
+    \end{itemize}
+    \item \texttt{Jobs} (\textbf{jobs}):
+    \begin{itemize}
+        \item \texttt{id} (Primary Key): String type, uniquely identifies the job.
+        \item \texttt{deliverymanid}: String type, stores the ID of the deliveryman.
+        \item \texttt{order\_id}: String type, stores the ID of the order.
+        \item \texttt{day}: String type, stores the day of the job.
+        \item \texttt{date}: String type, stores the date of the job.
+        \item \texttt{time}: String type, stores the time of the job.
+        \item \texttt{type}: String type, stores the type of the job.
+    \end{itemize}
+    \item \texttt{Ondelivery} (\textbf{ondelivery}):
+    \begin{itemize}
+        \item \texttt{id} (Primary Key): String type, uniquely identifies the on delivery status.
+        \item \texttt{deliverymanid}: String type, stores the ID of the deliveryman.
+        \item \texttt{status}: String type, stores the status of the delivery (default value: true).
+    \end{itemize}
+\end{itemize}
+
+\subsection{Implementation of Products database}
+ 
+\begin{itemize}
+    \item \textbf{Product}:
+    \begin{itemize}
+        \item \texttt{id} (Primary Key): \texttt{STRING} type, uniquely identifies the product.
+        \item \texttt{catagory}: \texttt{STRING} type, not nullable, stores the category of the product.
+        \item \texttt{productName}: \texttt{STRING} type, not nullable, stores the name of the product.
+        \item \texttt{productDetail}: \texttt{STRING} type, not nullable, stores the details of the product.
+        \item \texttt{size}: \texttt{STRING} type, not nullable, stores the size of the product.
+        \item \texttt{color}: \texttt{STRING} type, not nullable, stores the color of the product.
+        \item \texttt{price}: \texttt{INTEGER} type, not nullable, stores the price of the product.
+        \item \texttt{quantity}: \texttt{INTEGER} type, not nullable, stores the quantity of the product.
+        \item \texttt{photo}: \texttt{STRING} type, nullable, stores the photo of the product.
+    \end{itemize}
+    
+    \item \textbf{catagory}:
+    \begin{itemize}
+        \item \texttt{id} (Primary Key): \texttt{INTEGER} type with auto-increment, uniquely identifies the category.
+        \item \texttt{catagory}: \texttt{STRING} type, not nullable, stores the category name.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Implementation of Satff's database}
+\begin{itemize}
+    % \item \textbf{StaffReg}:
+    % \begin{itemize}
+    %     \item \texttt{id} (Primary Key): \texttt{STRING} type, uniquely identifies the staff registration.
+    %     \item \texttt{position}: \texttt{STRING} type, not nullable, stores the position of the staff.
+    %     \item \texttt{employeename}: \texttt{STRING} type, not nullable, stores the name of the employee.
+    %     \item \texttt{fname}: \texttt{STRING} type, not nullable, stores the first name of the employee.
+    %     \item \texttt{mname}: \texttt{STRING} type, not nullable, stores the middle name of the employee.
+    %     \item \texttt{nationality}: \texttt{STRING} type, not nullable, stores the nationality of the employee.
+    %     \item \texttt{dob}: \texttt{STRING} type, not nullable, stores the date of birth of the employee.
+    %     \item \texttt{photo}: \texttt{STRING} type, nullable, stores the photo of the employee.
+    %     \item \texttt{pstree}: \texttt{STRING} type, not nullable, stores the street of the permanent address.
+    %     \item \texttt{phouse}: \texttt{STRING} type, not nullable, stores the house number of the permanent address.
+    %     \item \texttt{pCity}: \texttt{STRING} type, not nullable, stores the city of the permanent address.
+    %     \item \texttt{ppostoffice}: \texttt{STRING} type, not nullable, stores the post office of the permanent address.
+    %     \item \texttt{ppostcode}: \texttt{STRING} type, not nullable, stores the postcode of the permanent address.
+    %     \item \texttt{parstree}: \texttt{STRING} type, not nullable, stores the street of the parent's address.
+    %     \item \texttt{parhouse}: \texttt{STRING} type, not nullable, stores the house number of the parent's address.
+    %     \item \texttt{parCity}: \texttt{STRING} type, not nullable, stores the city of the parent's address.
+    %     \item \texttt{parpostoffice}: \texttt{STRING} type, not nullable, stores the post office of the parent's address.
+    %     \item \texttt{parpostcode}: \texttt{STRING} type, not nullable, stores the postcode of the parent's address.
+    %     \item \texttt{mobilenumber}: \texttt{STRING} type, not nullable, stores the mobile number of the employee.
+    %     \item \texttt{alternatenumber}: \texttt{STRING} type, not nullable, stores the alternate contact number of the employee.
+    %     \item \texttt{officenumber}: \texttt{STRING} type, not nullable, stores the office contact number of the employee.
+    %     \item \texttt{customerEmail}: \texttt{STRING} type, not nullable, stores the customer email of the employee.
+    %     \item \texttt{joiningdate}: \texttt{DATE} type, not nullable, stores the joining date of the employee.
+    %     \item \texttt{salary}: \texttt{INTEGER} type, not nullable, stores the salary of the employee.
+    % \end{itemize}
+    
+    \item \textbf{Login}:
+    \begin{itemize}
+        \item \texttt{staffid} (Primary Key): \texttt{STRING} type, uniquely identifies the staff login.
+        \item \texttt{email}: \texttt{STRING} type, not nullable, stores the email of the staff.
+        \item \texttt{password}: \texttt{STRING} type, not nullable, stores the password of the staff.
+    \end{itemize}
+    
+    \item \textbf{costtype}:
+    \begin{itemize}
+        \item \texttt{id} (Primary Key): \texttt{INTEGER} type with auto-increment, uniquely identifies the cost type.
+        \item \texttt{costs}: \texttt{STRING} type, not nullable, uniquely identifies the cost.
+    \end{itemize}
+    
+    \item \textbf{costs}:
+    \begin{itemize}
+        \item \texttt{costid} (Primary Key): \texttt{STRING} type, uniquely identifies the cost.
+        \item \texttt{type}: \texttt{STRING} type, not nullable, stores the type of cost.
+        \item \texttt{details}: \texttt{STRING} type, nullable, stores additional details of the cost.
+        \item \texttt{amount}: \texttt{INTEGER} type, not nullable, stores the amount of the cost.
+    \end{itemize}
+\end{itemize}
