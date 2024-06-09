@@ -1,0 +1,59 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  padding: 40px 0px;
+}
+
+.footer-options p {
+  padding: 0px 0px 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.footer-options p a {
+  text-decoration: none;
+  color: beige;
+}
+
+.footer-options p a:hover {
+  transform: scale(1.1);
+  color: blue;
+}
+
+.footer-address {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+}
+
+.footer-address .contacts p {
+  padding: 0px 0px 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+
+}
+
+.footer-address .contacts p a {
+  text-decoration: none;
+  color: beige;
+}
+
+.footer-address .contacts p a:hover {
+  color: blue;
+}
+
+.footer-address .map-view p {
+  color: beige;
+}
+
+.copywrite {
+  background-color: gray;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 0px;
+  text-align: center;
+  color: white;
+}

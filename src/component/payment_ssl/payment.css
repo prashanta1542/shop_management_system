@@ -1,0 +1,10 @@
+.payment-fail{
+    text-align: center;
+    height: 100vh;
+    background-color: #079123;
+    color: #7ff07d;
+    font-size: 40px;
+    padding: 40px;
+    display: block;
+    text-transform: uppercase;
+}

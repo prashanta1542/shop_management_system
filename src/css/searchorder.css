@@ -1,0 +1,45 @@
+.order-state-form{
+    
+    background-color: #f1d697;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .message{
+    text-align: center;
+    background-color: red;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: white;
+}
+ 
+   .order-state-form form {
+  width: 40%;
+  margin: auto;
+  padding: 40px 0px;
+  background-color: #f0f8ff8a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
+}
+  
+  .order-state-form form input[type=text]{
+    background-color: aqua;
+    width: 60%;
+  }
+  .order-state-form form input, .order-state-form form .button{
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+  }

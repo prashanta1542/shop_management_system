@@ -1,0 +1,64 @@
+.cart-invoice{width: 70%;margin: 0 auto;}
+.cart-invoice-header{font-size: 20px;text-align: center;padding: 10px 0px;border: 2px solid;background-color: aliceblue;}
+.cart-invoice-user-info{display: flex;justify-content: space-around;font-size: 15px;font-weight: bold;font-style: italic;padding: 10px 0px;}
+.cart-invoice-address-info p{
+  text-align: right;
+  font-size: 12px;
+  padding: 5px 20px 0px;
+}
+.cart-invoice-address-info{
+  
+  border-bottom: 1px solid;
+}
+.cart-invoice-address-info p:first-child{
+  text-align: left;
+}
+.cart-invoice-address-info p:nth-child(2){
+  font-size:27px;
+  padding-right:36px;
+  text-transform: uppercase;
+  color: #20dee7;
+}
+.cart-invoice-auth-info{
+  padding: 20px;
+  border-bottom: 1px solid;
+}
+.cart-invoice-auth-info p{
+  text-align: right;
+  padding-right:100px;
+  color: #0c5858;
+}
+.cart-invoice-auth-info .cart-invoice-auth-by p{
+  
+  padding: 5px 0px 0px 0px;
+  text-align: right;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+}
+.cart-invoice-product{
+  border-bottom: 1px solid;
+}
+.cart-invoice-product table {
+  border: 38px solid azure;
+}
+.cart-invoice-product table tbody td {
+  text-align: center;
+}
+.cart-invoice-product table tbody tr:nth-child(1){
+  
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.cart-invoice-product table tbody tr:nth-child(odd){
+  
+  background-color: #8080804a;
+  color: #150748;
+}
+.special-note p{
+  font-size: 10px;
+  text-align: center;
+  padding: 20px 0px;
+  background-color: yellow;
+}

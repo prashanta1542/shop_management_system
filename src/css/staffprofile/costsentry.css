@@ -1,0 +1,83 @@
+
+    .cost-details{
+    
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: calc((100vh - 500px) / 2) 0;
+      }
+
+.costs-form{
+
+    width: 20%;
+    /* margin: 0 auto; */
+  }
+  .costs-form-p{
+  
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 20px 0px;
+    background-color: aliceblue;
+  }
+  .costs-form-final form{
+    
+    padding: 20px 10px;
+    background-color: aqua;
+  }
+  .costs-form-final form select, .costs-form-final form input , .costs-form-final form textarea{
+  display: block;
+    width: 100%;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+  }
+  .costs-form-final form .button{
+      background-color: gray;
+  }
+  .costs-form-final form .button:hover{
+    background-color: blue;
+    color: white;
+  }
+  .costs-form-final form .button:active{
+    background-color: yellow;
+    color: white;
+  }
+  .costs-table{
+  
+    width: 60%;
+  }
+  .costs-table th{
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  .costtype{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;
+    padding: 10px 0px;
+    }
+    .costtype-form{
+     padding: 0px 10px;
+    }
+  .costtype-form form input, .costtype-search input{
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0px 0px 10px;
+    border: none;
+    background-color: #b6efae;
+    color: #e61481;
+    font-weight: bold;
+  }
+  .costtype-form form input:nth-child(2){
+     width: 80px;
+    margin: 0px 0px 0px 10px;
+     background-color: #cbf3b9;
+     color: #d336a5;
+  }
+  

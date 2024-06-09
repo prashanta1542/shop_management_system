@@ -1,0 +1,34 @@
+.invoice-print{
+    width: 600px;
+    margin: 20px auto;
+    background-color: #4fffef;
+    padding: 20px;
+    box-shadow: 6px -6px 8px rgba(0, 0, 0, 0.3);
+}
+.invoice-header{
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    text-align: right;
+    letter-spacing: 2px;
+    color: #49aaff;
+    font-weight: bold;
+}
+.invoice-id{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding: 20px 0px;
+    border-bottom: 1px solid;
+    color: brown;
+}
+.invoice-personal-info{
+    padding: 20px 30px;
+}
+.invoice-personal-info p{
+    color: #12e1ba;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 10px 0px 0px;
+    font-weight: bold;
+}

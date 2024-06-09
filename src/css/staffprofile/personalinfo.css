@@ -1,0 +1,83 @@
+.staff-personal p {
+    text-align: center;
+    padding: 5px 0px;
+    font-size: 21px;
+    letter-spacing: 2px;
+    background-color: #a9f5f2;
+    color: #a9bcf4;
+    border-bottom: 2px solid;
+    font-weight: bold;
+  }
+  .staff-personal-info{
+  display: flex;
+  justify-content: space-around;
+  background-color: aliceblue;
+    padding-top:40px;
+  }
+  .staff-personal-info div:first-child img{
+    
+    width: 81%;
+    text-align: center;
+    margin-left: 20px;
+    border-top: 4px solid yellow;
+    border-bottom: 4px solid blue;
+    border-right: 4px solid greenyellow;
+    border-left: 4px solid plum;
+    border-radius: 110px;
+  }
+  .staff-personal-info p{
+    
+    text-align: left;
+    font-size: 15px;
+    padding: 12px 10px;
+    border-bottom: 0px;
+    background-color: transparent;
+    letter-spacing: 2px;
+  }
+  .staff-address p{
+  font-size: 20px;
+    background-color: #a9f5f2;
+    color: #a9b1f5;
+  }
+  .staff-address-info {
+  display: flex;
+  justify-content: space-around;
+    padding: 20px 0px;
+    background-color: aliceblue
+  }
+  .staff-address-info div{
+    width: 30%;
+  }
+  .staff-address-info div p:first-child{
+    font-size: 16px;
+    background-color: rebeccapurple;
+    border:none;
+  }
+  .staff-address-info div p{
+    background-color: transparent;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    font-size: 15px;
+    padding: 5px 0px;
+  }
+  .staff-contact-info p:first-child{
+      font-size: 20px;
+    background-color: #a9f5f2;
+    color: #a9b1f5;
+  }
+  .staff-contact-info div{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0px
+  }
+  .staff-contact-info div p,.staff-contact-info div p:first-child{
+    background-color: transparent;
+    text-align:left;
+    font-size:15px;
+    padding-left: 30px;
+    color: #afb7f5; 
+    border-top:1px solid;
+    border-left:2px solid;
+    border-right:2px solid;
+    
+  }  

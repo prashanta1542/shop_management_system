@@ -1,0 +1,44 @@
+.d-header{
+    background-color: #3eb911;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    }
+    .d-header-title{
+      width: 20%;
+    }
+    .d-header-title p{
+      
+      font-size: 27px;
+      text-transform: uppercase;
+      padding: 10px;
+      color: aqua;
+    }
+    .d-header-form{
+    width:30%;
+    }
+.d-header-form form input:first-child{
+    width: 70%;
+}
+.d-header-form form input:first-child,.d-header-form form input:last-child{
+   padding: 10px 5px;
+    border: none;
+    letter-spacing: .5px;
+    
+}
+    .d-header-nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    }
+.d-header-nav p a{
+    padding: 0px 20px;
+    text-decoration: none;
+    color: aqua;
+}
+.d-header-nav p a:hover{ 
+    color: #e2e82c;
+}
+.d-header-nav p a:active{ 
+    color: #e82c4f;
+}

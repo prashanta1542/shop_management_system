@@ -1,0 +1,44 @@
+.payment-form{
+
+  padding: 20px 0px;
+  background-color: #3ee6e633;
+}
+
+.payment-form form{
+ display: flex;
+ flex-direction: column;
+  
+}
+.payment-form form label{
+color: palevioletred;
+font-size: 25px;
+padding-left: 20px;
+}
+.payment-form form input{
+  padding: 5px 25px;
+  font-size: 16px;
+  background-color: paleturquoise;
+  border: none;
+  color: teal;
+  margin-bottom: 10px;
+}
+.payment-form form input:last-child{
+  margin-top: 30px;
+  background-color: gainsboro;
+  font-size: 20px;
+}
+.payment-form form input:last-child:hover{
+  background-color: green;
+  color: white;
+}
+.payment-form form input:last-child:active{
+  background-color: red;
+  color: white;
+}
+
+
+.payment-option {
+  padding: 40px;
+  background-color: aliceblue;
+  height: 500px;
+}

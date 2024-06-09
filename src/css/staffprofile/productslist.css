@@ -1,0 +1,122 @@
+.product-list {
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  .product-list h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .product-list th,
+  .product-list td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .product-list th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+  }
+.tableupdatebtn{
+text-align: center;
+padding: 2px;
+text-transform: uppercase;
+background-color: blue;
+color: white;
+font-weight: bold;
+cursor: pointer;
+transition: transform 0.3s ease-out;
+box-shadow: 6px -6px 8px rgba(0, 0, 0, 0.3);
+margin:10px;
+}
+.tableupdatebtn:hover{
+  transform: scale(1.1);
+background-color: red;
+color: beige;
+}
+.tableupdatebtn:active{
+  background-color: blueviolet;
+}
+  .tabledeletebtn{  
+    text-align: center;
+    padding: 2px;
+    text-transform: uppercase;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+    box-shadow: 6px -6px 8px rgba(0, 0, 0, 0.3);
+  }
+  .tabledeletebtn:hover{
+    transform: scale(1.1);
+    background-color: goldenrod;
+    color: beige;
+  }
+  .tabledeletebtn:active{
+    background-color: blueviolet;
+  }
+  .search-pro-cat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: yellow;
+  }
+    .search-pro-cat input{
+      width: 300px;
+      height: 40px;
+      padding-left: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border: none;
+      background-color: antiquewhite;
+      color: #810de2;
+      font-weight: bold;
+      margin: 0 auto;
+    }
+  .search-pro-cat select{
+    margin: 0 auto;
+    width: 300px;
+    height: 40px;
+    padding: 0px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    background-color: antiquewhite;
+    color: #810de2;
+    font-weight: bold;
+  }
+  .handlecarousel{
+    position: relative;
+    height: 60px;
+    }
+  .handlecarousel svg{
+     position: absolute;
+    top:30%;
+    color: green;
+    background-color: aqua;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-sizing: border-box;
+    padding: 5px 0px;
+  }
+.handlecarousel svg:first-child{
+  left: 0%;
+}
+.handlecarousel svg:last-child{
+  right:0%;
+}
+  .handlecarousel svg:hover{
+    background-color: palegreen;
+  }

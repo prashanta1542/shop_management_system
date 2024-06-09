@@ -1,0 +1,55 @@
+.staff-register{
+    padding: 0px 40px;
+    background-color: #d7c0974a;
+  }
+  .staff-register-form {
+    padding: 20px 0px;
+   background: url('https://i.pinimg.com/originals/85/6f/31/856f31d9f475501c7552c97dbe727319.jpg');
+   background-repeat: no-repeat;
+   width: 80%;
+   margin:0 auto;
+  }
+  .staff-register-form form{
+  width: 100%;
+  }
+  .staff-register-form form input{
+    display: flex;
+    width: 100%;
+    padding :10px 0px 10px 30px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    background-color: #79917847;
+    border: none;
+    font-size: 15px;
+    color: #0f039f;
+  }
+  .staff-register-form form select{
+    width: 80%;
+  margin: 25px auto;
+  display: block;
+  padding :10px 0px 10px 70px;
+  background-color: #79917847;
+    border: none;
+    font-size: 15px;
+    color: #0f039f;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  }
+.staff-register-form form p{
+  text-align: center;
+  border-bottom: 2px solid;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #e011b6;
+  color: #e7feff;
+  font-weight: bold;
+}
+
+.staff-register-form form .error{
+  background-color: #fb9f11;
+color: red;
+border: none;
+padding: 2px 0px;
+margin: 0px 0px 10px 0px;
+}

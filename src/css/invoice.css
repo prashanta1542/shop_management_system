@@ -1,0 +1,31 @@
+.invoice-form{
+    background-color: aliceblue;
+  }
+  .invoice-form p{
+      
+      text-align: center;
+      padding: 10px 0px;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: burlywood;
+      letter-spacing: 2px;
+      border-top: 2px solid;
+      border-bottom: 2px solid;
+      background-color: #8080801f;
+    }
+    .invoice-form form{
+      width: 50%;
+      margin: 0 auto;
+      margin-top:20px;
+      margin-bottom: 20px;
+      padding: calc((100vh - 500px) / 2) 0;
+    }
+    .invoice-form form input , .invoice-form form select{
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 5px 10px;
+      background-color: #8a2be23d;
+      border: none;
+    }
+  

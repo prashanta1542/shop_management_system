@@ -1,0 +1,79 @@
+.prouct-details-containers{
+
+    background-color: aliceblue;
+  }
+  .prouct-details-header{
+  
+    text-align: center;
+    padding: 5px 0px;
+    color: aquamarine;
+    font-weight: lighter;
+    font-size: 40px;
+    letter-spacing: 2px;
+    border-bottom: 3px solid;
+    border-top: 3px solid;
+  }
+  .prouct-details-body{
+  
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+  }
+  .prouct-details-image{
+    padding-top:80px;
+    width:30%;
+  }
+  .prouct-details-image img{
+    transition: transform .2s;
+    width: 100%;
+    border: 24px solid whitesmoke;
+  }
+  .prouct-details-image img:hover{
+     transform: scale(1.5);
+  }
+  .prouct-details-options{
+    padding-top: 155px;
+  }
+  .prouct-details-options p{
+  
+    font-size: 20px;
+    color: chartreuse;
+    line-height: 2.5;
+    letter-spacing: 2px;
+    border-bottom: 1px solid;
+    padding: 0px 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .prouct-details-options p:hover{
+    background-color: blue;
+    color:white;
+  }
+  .prouct-details-options p:active{
+    background-color: red;
+   
+  }
+  .prouct-details-descriptions{
+    width: 40%;
+    padding-top: 40px; 
+  }
+  .prouct-details-descriptions p{  
+    text-align: justify;
+    padding:13px;
+    border: 4px solid azure;
+    background-color: azure;
+    color: cadetblue;
+    font-weight: bold;
+    line-height: 2;
+  }
+  .similarProducts{
+    text-align: center;
+text-transform: uppercase;
+letter-spacing: 3px;
+font-size: 30px;
+font-weight: bold;
+background-color: #afceff;
+color: white;
+padding-bottom: 5px;
+border-bottom: 5px solid blue;
+  }

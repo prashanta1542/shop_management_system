@@ -1,0 +1,42 @@
+.formDelivered{
+    background-color: aliceblue;
+    
+  }
+  .formDelivered form{
+    width: 600px;
+    margin: 0 auto;
+    padding: 50px 0px;
+  }
+.formDelivered form textarea{
+  width: 80%;
+  height: 100px;
+  border-radius: 15px;
+  padding: 10px ;
+  background-color: greenyellow;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+  .formDelivered form input , .formDelivered form select{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: greenyellow;
+    padding: 0px 20px;
+    letter-spacing: 2px;
+    margin: 10px 0px;
+  }
+  .alert{
+    color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: red;
+  letter-spacing: 2px;
+  text-align: center;
+  padding:20px;
+  text-transform: uppercase;
+}

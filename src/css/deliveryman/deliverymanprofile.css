@@ -1,0 +1,59 @@
+.d-personal {}
+
+.d-personal-details {
+
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 280px;
+}
+
+.d-personal-details div:first-child img {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+
+.d-personal-details div:first-child p {
+    text-align: center;
+    letter-spacing: 1px;
+    border-bottom: 1px solid black;
+    padding: 5px 0px;
+}
+
+.d-personal-info p {
+    letter-spacing: 1px;
+    color: gray;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 0px;
+}
+
+.d-address {
+    width: 50%;
+    margin: 0 auto;
+}
+.d-address p:first-child{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid gray;
+}
+.d-address-info {
+    display: flex;
+    justify-content: space-around;   
+    border-left:1px solid black;
+    border-right:1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+.d-address-info div p{
+    padding: 5px 0px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}

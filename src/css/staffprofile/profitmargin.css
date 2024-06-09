@@ -1,0 +1,127 @@
+.s-first-div{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+    background-color: #7fffd43d;
+    color: white;
+  }
+  .s-first-div p{
+    
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 5px;
+  }
+  .s-first-div div p:first-child{
+    padding-bottom: 0px;
+  }
+  .total-order{
+      
+    background-color: #b3990e;
+    width: 199px;
+    height: 74px;
+  }
+  .single-order{
+      width: 199px;
+  height: 74px;
+    background-color: #b3990e;
+  }
+  .multi-order{
+      width: 199px;
+  height: 74px;
+    background-color: aquamarine;
+  }
+  .s-second-div{
+      
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+    background-color: #e0fff5;
+    color: white;
+  }
+  .s-second-div p{
+     font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 5px;
+  }
+  .s-second-div p:first-child{
+    padding-bottom: 0px;
+  }
+  .earning{
+      width: 199px;
+  height: 74px;
+    background-color: #dd5454;
+  }
+  .costs{
+      width: 199px;
+  height: 74px;
+    background-color: #80b731;
+  }
+  .revenue{
+      width: 199px;
+  height: 74px;
+    background-color: #4791d2;
+  }
+  .s-third-div{
+    background-color: #e7ebff;
+    padding: 20px 0px;
+  }
+  .s-third-div .s-third-div-first-p{
+    padding: 0px 0px 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    border-bottom: 2px solid greenyellow;
+    color: #2cd51e;
+  }
+  .division-list{
+      
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  }
+.division-list p{
+  width: 180px;
+  padding: 10px 20px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border: 1px solid gray;
+  background-color: aquamarine;
+  color: #a31fae;
+  font-weight: bold;
+  text-align: center;
+}
+.division-list span{
+  
+  background-color: blue;
+  padding: 0px 4px;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  margin-left: 4px;
+}  
+.flexGraph {
+  display: flex;
+  justify-content: space-around;
+  background-color: #d7fad833;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+  height: 50%;
+}
+
+.graphstyle {
+  flex-basis: calc(50% - 20px);
+  padding: 20px;
+ 
+  width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+  height: 50%;
+}

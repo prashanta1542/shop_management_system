@@ -1,0 +1,11 @@
+.checkorder-table-heding th{
+    text-align: center;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+background-color: #b0b085;
+color: aliceblue;
+font-size: 20px;
+}
+.checkorder-table-heding th:hover{
+    transform: scale(1.2);
+}

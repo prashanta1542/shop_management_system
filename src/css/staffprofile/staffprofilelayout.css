@@ -1,0 +1,24 @@
+.staff-profile-layout{
+    
+    background-color: #80808054;
+  }
+  .staff-profile-layout ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 20px 0px;
+  }
+  .staff-profile-layout ul li{
+    padding: 0px 60px;
+  }
+  .staff-profile-layout ul li a{
+   text-decoration: none;
+   letter-spacing: 1px;
+   font-size: 18px;
+   color: chocolate;
+  }
+  .staff-profile-layout ul li a:hover{
+    border-bottom: 1px solid;
+   padding-bottom: 3px;
+    color: blanchedalmond; 
+  }
