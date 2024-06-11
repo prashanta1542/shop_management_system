@@ -13,8 +13,8 @@ function sendOTPByEmail(email, otp) {
   let transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-      user: 'prashantachowdhury967@gmail.com',
-      pass: 'uhnthdcaznlatwuq'
+      user:
+      pass:
     }
   });
 
