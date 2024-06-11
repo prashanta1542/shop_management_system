@@ -14,8 +14,8 @@ const { where } = require('sequelize');
 //payment method intrigrate
 
 const SSLCommerzPayment = require('sslcommerz-lts');
-const store_id = 'shopm64bd607b89c63'
-const store_passwd = 'shopm64bd607b89c63@ssl'
+const store_id = 
+const store_passwd = 
 const is_live = false //true for live, false for sandbox
 
 //Payment method intrigrate
@@ -25,8 +25,8 @@ function sendOTPByEmail(email, orderid,otp) {
   let transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-      user: 'prashantachowdhury967@gmail.com',
-      pass: 'uhnthdcaznlatwuq'
+      user: 
+      pass: 
     }
   });
 
@@ -51,8 +51,8 @@ function orderCancelEmail(email, orderid) {
   let transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-      user: 'prashantachowdhury967@gmail.com',
-      pass: 'uhnthdcaznlatwuq'
+      user: 
+      pass:
     }
   });
 
