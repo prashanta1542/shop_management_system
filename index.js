@@ -15,8 +15,8 @@ const port = 3001
 //payment method intrigrate
 
 const SSLCommerzPayment = require('sslcommerz-lts');
-const store_id = 'shopm64bd607b89c63'
-const store_passwd = 'shopm64bd607b89c63@ssl'
+const store_id = 
+const store_passwd = 
 const is_live = false //true for live, false for sandbox
 
 //Payment method intrigrate
